@@ -1,0 +1,292 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	/*Aqui eu defino a cor da fonte do meu site */
+	color: #f8f0ff;
+}
+
+a:link, a:active, a:visited{
+	color: #f8f0ff;
+	/*Cores para definir do home, sobre, contato
+	text-decoration: none;*/
+}
+
+a:hover{
+	text-decoration: underline;
+	/*para que toda vez que eu passe o mouse eu veja algo diferente*/
+}
+
+/* grid 960px */
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+
+.col1{
+	width: 60px;
+}
+
+.col2{
+	width: 140px;
+}
+
+.col3{
+	width: 220px;
+}
+
+.col4{
+	width: 300px;
+}
+
+.col5{
+	width: 380px;
+}
+
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+
+.col8{
+	width: 620px;
+}
+
+.col9{
+	width: 700px;
+}
+
+.col10{
+	width: 780px;
+}
+
+.col11{
+	width: 860px;
+}
+
+.col12{
+	width: 940px;
+}
+
+
+/* estilos reutilizáveis */
+
+.sem-padding{
+	padding: 0 !important;
+}
+
+.sem-margin{
+	margin: 0 !important;
+}
+
+/*aqui eu distancio os meus h uns dos outros */
+h1, h2, h3, h4, h5, h6{
+	font-weight: 900;
+	margin: 15px 0 10px 0;
+}
+
+/* aqui eu arrumo todas as listas*/
+ul li, ol li {
+	margin-bottom: 5px;
+}
+
+/*inline é pra mostrar em linha, um do lado do outro */
+ul.inline li, ol.inline li{
+	display: inline;
+	/* display: inline; que é pra mostrar em linha */
+	margin-right: 20px;
+	/* margin-right: 15px; para mim distanciar o home, sobre e contato */
+}
+
+/* faz com que meu ultimo ítem não tenha margem */
+ul.inline li:last-child, ol.inline li:last-child{
+	margin-right: 0;
+}
+
+/* todas as listas que tiver o nome sem marcador, não é pra aparecer a bolinha, ou o marcador 
+na frente*/
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none;
+}
+
+/* toda classe que tiver botão, ou input será estilizado por aqui */
+a.botao, input.botao{
+	/* background: aqui eu defino a cor do meu botão */
+	background: #f8f0ff;
+	padding: 5px 10px;
+	/* border-radius: isso é para arredondar os cantos do botão  */
+	border-radius: 3px;
+	color: #ebebeb;
+	/* cursor: pointer; isso é para meu cursor ficar com a mãozinha */
+	cursor: pointer;
+	margin: 5px 0;
+	/* display: inline-block; para ele mostrar em linha mais para ele ser um bloco */
+	display: inline-block;
+	/* border: none; aqui eu defino se eu quero ou não a borda para meus botões */
+	border: none;
+}
+/* fazer o efeito de quando o mouse estiver em cima do botão */
+a.botao:hover, input.botao:hover;{
+	background: #315e8a;
+	/* text-decoration: none; para não ficar subilinhado */ 
+	text-decoration: none;
+}
+
+/* aqui eu defino os tamanhos das minhas imagens */ 
+img{
+	max-width: 60%;
+	height: auto;
+}
+
+/*layoute do site */
+
+/* Definindo a cor de fundo do meu menu */
+.header{
+	background: #000000;
+	
+}
+/* aqui irei estilizar só meu h1 que tiver a classe logo */
+h1.logo{
+	/* font-weight: 300; aqui eu defino a gravidade do meu negrito */
+	font-weight: 300;
+	/* color: #315e80; aqui eu defino a cor do nome da minha página */
+	color: #f8f0ff;
+	letter-spacing: -2px;
+	text-shadow: 0 1px 0#ccc,
+	0 2px 0 c9c9c9,
+	0 3px 0 #bbb,
+	0 4px 0 #000000,
+	0 5px 0 #aaa,
+	0 6px 1px rgba(0,0,0.1),
+	0 0 5px rgba(0,0,0,.1),
+	0 1px 3px rgba( 0,0,0,.3),
+	0 3px 5px rgba(0,0,0,.2),
+	0 5px 10px rgba(0,0,0.25),
+	0 10px 10px rgba(0,0,0,.2),
+	0 20px 20px rgba(0,0,0,.15);
+}
+
+/* aqui eu começo a estilizar o meu conteúdo extra */
+.conteudo-extra{	
+	background: #;
+}
+
+/* aqui eu começo a estilizar o meu rodapá */
+.footer{
+	/* aqui em baixo eu coloco a cor da risca que eu quero */	
+	background: #000000;
+	/* aqui em baixo eu escolho a cor da letra que eu quero  */	
+	color: #f8f0ff;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
+}
+
+/* aqui eu irei estilizar o menu da minha página*/
+.menu{
+	/* text-transform: uppercase; para ficar com todas as letras maíusculas */
+	text-transform: uppercase;
+	/* text-align: right; pro meu texto ficar do lado direito */
+	text-align: right;
+	/* margin-top: 25px; aqui eu defino a margin do meu topo */
+	margin-top: 25px;
+}
+
+/* agora começar a trabalhar os meus links */
+.menu li a{
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+/* fazer o efeito de quando o mouse estiver em cima de um item de menu */
+.menu li a:hover{
+	/* os ítens abaixo faz com que eu consiga definir a cor de quando eu navego em cima 
+	do home , e outros iténs do meu menu */
+	text-decoration: none;
+	background: #1f3c58;
+	color: #ebebeb;
+}
+
+/* começando a estilizar as minhas notícias */
+ul.noticias li{
+	/* clear: both; serve para mim limpar as minhas flutuações */
+	clear: both;	
+	display: block;
+	/* overflow: hidden; serve para ocultar o conteúdo antecedente */
+	overflow: hidden;
+	/* margin-bottom: 20px; colocando uma margen de baixo de cada li */
+	margin-bottom: 20px;
+}
+
+/* aqui eu defino o tamanho de cada imagem que eu colocar em minhas notícias */
+ul.noticias li img{
+	width: 70px;
+	height: auto;
+	margin-right: 10px;
+	float: left;
+	/* float: left; aqui faz com que ela flutue para o lado esquerdo */
+}
+
+/* aqui eu estilizo o título da minha notícia */
+ul.noticias li h4{
+	margin: -2px 0 5px 0;
+	font-weight: 500;
+}
+
+ul.noticias li p{
+	margin: -5px 0;
+	font-weight: 300;
+}
+
+ul.noticias li p a{
+	font-weight: 500;
+}
+
+/* agora eu começo a estilizar a minha página de contato */
+.contato label{
+	display: block;
+	font-size: 13px;
+	font-weight: 900;
+	color: #f0f8ff;
+}
+
+.contato input, .contato textarea{
+	display: block;
+	margin-bottom: 15px;
+	padding: 5px 2%;
+	width: 96%;
+	color: #000000;
+}
+
+.contato textarea{
+	height: 200px;
+}
+
+.contato input.botao{
+	width: auto;
+}
+
+/* estilizando os meus icones */
+.icons {
+    float: right;
+}
+
+.icons li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+.icons a {
+    text-decoration: none;
+	color: #f8f0ff;
+	
+}	
+
+
